@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#1B2160">
+<meta name="description" content="Support for Prism, a task manager app for iPhone: frequently asked questions and contact.">
+<title>Support | Prism</title>
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="alternate" hreflang="ja" href="../">
+<link rel="alternate" hreflang="en" href="./">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-bar">
+      <a class="brand" href="../../">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="pm-light" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#FF6A88"/>
+              <stop offset="0.3" stop-color="#FFB35C"/>
+              <stop offset="0.55" stop-color="#5EF2C2"/>
+              <stop offset="0.78" stop-color="#4CC9FF"/>
+              <stop offset="1" stop-color="#8B7CFF"/>
+            </linearGradient>
+            <clipPath id="pm-clip"><circle cx="16" cy="16" r="11"/></clipPath>
+          </defs>
+          <circle cx="16" cy="16" r="11" fill="#FFFFFF" fill-opacity="0.08"/>
+          <rect x="4" y="17" width="24" height="12" fill="url(#pm-light)" fill-opacity="0.92" clip-path="url(#pm-clip)"/>
+          <line x1="4" y1="17" x2="28" y2="17" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.2" clip-path="url(#pm-clip)"/>
+          <circle cx="16" cy="16" r="11" fill="none" stroke="#FFFFFF" stroke-opacity="0.55" stroke-width="1.2"/>
+        </svg>
+        <span>Prism</span>
+      </a>
+      <nav class="lang-switch" aria-label="Language / 言語">
+        <a href="../" lang="ja" hreflang="ja">日本語</a>
+        <span aria-current="page" lang="en">English</span>
+      </nav>
+    </div>
+    <h1 class="page-title">Support</h1>
+    <p class="page-lead">Frequently asked questions and how to contact us</p>
+  </div>
+</header>
+
+<main id="main">
+  <nav class="toc" aria-labelledby="toc-title">
+    <p id="toc-title">Contents</p>
+    <ol>
+      <li><a href="#basics">Getting started</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#pro">Prism Pro and widgets</a></li>
+      <li><a href="#data">Storing and deleting tasks</a></li>
+      <li><a href="#others">Other questions</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ Getting started ============ -->
+  <section class="faq-group" aria-labelledby="basics">
+    <h2 id="basics">Getting started</h2>
+
+    <details class="faq" id="os">
+      <summary>Which devices and iOS versions are supported?</summary>
+      <div class="faq-body">
+        <p>Prism is an iPhone app and requires <strong>iOS 26 or later</strong>.</p>
+        <p>The App is available in English and Japanese and follows your iPhone’s language. To use a different language for Prism only, go to iPhone <span class="ui">Settings › Apps › Prism › Language</span>.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="where">
+      <summary>Where is my data stored? Can I sync with iCloud?</summary>
+      <div class="faq-body">
+        <p>Your tasks and other data are stored <strong>only on your iPhone</strong>. Nothing is sent to the developer’s servers.</p>
+        <p>The current version does not sync with iCloud or your other devices. Deleting the App also deletes your data.</p>
+        <p>For details, see the <a href="../../privacy/en/">Privacy Policy</a>.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ Notifications ============ -->
+  <section class="faq-group" aria-labelledby="notifications">
+    <h2 id="notifications">Notifications</h2>
+
+    <details class="faq" id="no-notification">
+      <summary>I’m not getting reminder notifications</summary>
+      <div class="faq-body">
+        <p>Please check the following, in order.</p>
+        <ol>
+          <li><strong>Notification permission:</strong> if the App’s <span class="ui">Settings › Notifications</span> shows “Off — Open Settings,” notifications aren’t allowed. Tap it to open iPhone Settings and turn on Allow Notifications. You can also change this in iPhone <span class="ui">Settings › Notifications › Prism</span>.</li>
+          <li><strong>Focus:</strong> when a Focus such as Do Not Disturb is on, notifications may not appear. Check whether Prism is allowed in iPhone <span class="ui">Settings › Focus</span>.</li>
+          <li><strong>Reminder time:</strong> reminders set for a time that has already passed aren’t delivered. Open the task and make sure the reminder is in the future.</li>
+          <li><strong>Completed or deleted tasks:</strong> tasks that are completed or in Recently Deleted don’t send reminders.</li>
+          <li><strong>Due dates without a time:</strong> reminders for these tasks arrive at the time set in the App’s <span class="ui">Settings › Notifications › All-Day Reminder Time</span>.</li>
+          <li><strong>A large number of reminders:</strong> iPhone limits how many notifications one app can schedule, so Prism schedules the nearest ones first. Opening the App from time to time, or keeping iPhone <span class="ui">Settings › General › Background App Refresh</span> on, lets later reminders be scheduled as their turn comes.</li>
+        </ol>
+        <p>After you allow notifications, open the App and the reminders you already set will be scheduled.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="notification-name">
+      <summary>Notifications say only “Reminder” instead of the task name</summary>
+      <div class="faq-body">
+        <p><span class="ui">Settings › Display › Show Only Counts When Locked</span> is turned on in the App. While it’s on, notifications never show task names, even when your iPhone is unlocked (and Lock Screen widgets show only the count).</p>
+        <p>If you only want to hide notification content while your iPhone is locked, you can turn this setting off and set iPhone <span class="ui">Settings › Notifications › Show Previews</span> to “When Unlocked.”</p>
+      </div>
+    </details>
+
+    <details class="faq" id="notification-complete">
+      <summary>Tapping “Complete” on a notification asks me to unlock my iPhone</summary>
+      <div class="faq-body">
+        <p>To prevent someone else from completing your tasks, completing a task from a notification always requires unlocking your iPhone.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ Prism Pro and widgets ============ -->
+  <section class="faq-group" aria-labelledby="pro">
+    <h2 id="pro">Prism Pro and widgets</h2>
+
+    <details class="faq" id="what-is-pro">
+      <summary>What is Prism Pro? What’s included for free?</summary>
+      <div class="faq-body">
+        <p>Prism Pro is a <strong>one-time purchase</strong> that you keep forever (not a subscription). The price is shown in the App’s purchase screen.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Free</th><th scope="col">Prism Pro</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Add, complete, edit, and delete tasks; Today; All; search and filters; Completed; Recently Deleted; reminder notifications; light effects, sounds, and haptics</td>
+                <td>Everything in Free, plus Home Screen and Lock Screen widgets</td>
+              </tr>
+              <tr>
+                <td>Up to 5 categories (including the built-in “Work” and “Personal”) and up to 10 tags</td>
+                <td>Unlimited categories and tags</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>You can buy it from <span class="ui">Settings › Prism Pro</span> in the App. Prism Pro does not support Family Sharing.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="limit">
+      <summary>I can’t create a new category or tag</summary>
+      <div class="faq-body">
+        <p>The free version lets you create <strong>up to 5 categories</strong> (including the built-in “Work” and “Personal”) and <strong>up to 10 tags</strong>. <span class="ui">Settings › Manage Categories &amp; Tags</span> shows how many you’re using, such as “4 / 5.”</p>
+        <ul>
+          <li>Deleting a category or tag you no longer use frees up a slot. When you delete a category, its tasks aren’t deleted; they become “No Category.”</li>
+          <li>Adding an existing tag to a task doesn’t count toward the limit.</li>
+          <li>You can always rename, recolor, change icons, and reorder.</li>
+          <li>With Prism Pro, you can create as many as you like.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="faq" id="widget">
+      <summary>How do I add a widget? (Prism Pro)</summary>
+      <div class="faq-body">
+        <p>Widgets are a Prism Pro feature.</p>
+        <h3>Home Screen</h3>
+        <ol>
+          <li>Touch and hold an empty area of the Home Screen, tap “Edit” in the top-left corner, then tap “Add Widget.”</li>
+          <li>Choose “Prism” from the list.</li>
+          <li>Pick a size of “Today’s Tasks” (small, medium, or large) and add it. The medium and large sizes let you complete tasks right from the widget.</li>
+        </ol>
+        <h3>Lock Screen</h3>
+        <ol>
+          <li>Touch and hold the Lock Screen, tap “Customize,” then choose “Lock Screen.”</li>
+          <li>Tap the widget area and add “Tasks Left Today” from Prism.</li>
+        </ol>
+        <p>If you haven’t bought Prism Pro, the widget shows “Available with Prism Pro,” and tapping it opens the purchase screen.</p>
+        <p>If a widget says “Open Prism to continue” or looks out of date, open the App once.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="restore">
+      <summary>How do I restore my purchase?</summary>
+      <div class="faq-body">
+        <p>Tap “Restore Purchases” below <span class="ui">Settings › Prism Pro</span> in the App. You can also tap “Restore Purchases” in the purchase screen.</p>
+        <ul>
+          <li>You need to be signed in with <strong>the same Apple Account</strong> you used to buy Prism Pro. If you see “No purchase to restore,” check your App Store account.</li>
+          <li>With the same Apple Account, Prism Pro usually comes back automatically when you reinstall the App or open it on a new iPhone.</li>
+          <li>If you see “Waiting for approval,” the purchase is waiting for a family organizer or parent to approve it (Ask to Buy). Once it’s approved, Prism Pro unlocks automatically.</li>
+        </ul>
+        <p>Delete All Data does not remove your Prism Pro purchase.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="refund">
+      <summary>I’d like a refund</summary>
+      <div class="faq-body">
+        <p>Refunds for App Store purchases are handled by Apple; the developer can’t process them. Please request one at <a href="https://reportaproblem.apple.com/" hreflang="en">Apple’s Report a Problem</a> page.</p>
+        <p>After a refund, Prism Pro features are no longer available, but your categories, tags, and tasks stay as they are (even ones over the free limit; you just can’t create new ones).</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ Storing and deleting tasks ============ -->
+  <section class="faq-group" aria-labelledby="data">
+    <h2 id="data">Storing and deleting tasks</h2>
+
+    <details class="faq" id="thirty-days">
+      <summary>What happens to completed and deleted tasks? (the 30-day rule)</summary>
+      <div class="faq-body">
+        <ul>
+          <li><strong>Completed tasks</strong> stay in Completed and move to Recently Deleted automatically <strong>30 days after you complete them</strong>.</li>
+          <li><strong>Deleted tasks</strong> move to Recently Deleted and are permanently deleted <strong>30 days after</strong> they arrive there. Each task shows how many days are left.</li>
+          <li>Right after you delete a task, you can tap “Undo” at the bottom of the screen.</li>
+          <li>While a task is in Recently Deleted, you can “Restore” it at any time (tasks you choose to Delete Permanently can’t be restored). Its category, tags, due date, and reminder come back too (except categories or tags you deleted in the meantime). A completed task you restore starts a new 30-day period <strong>from the day you restore it</strong>.</li>
+        </ul>
+        <p>Open Completed and Recently Deleted from the “…” button at the top right of the All screen. Recently Deleted is also in <span class="ui">Settings › Data</span>.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="delete">
+      <summary>How do I delete my data?</summary>
+      <div class="faq-body">
+        <ul>
+          <li><strong>One task:</strong> swipe left on a task in a list, or touch and hold it and choose “Delete.” You can also delete it from the task’s details. It moves to Recently Deleted.</li>
+          <li><strong>All completed tasks:</strong> tap “Delete All” in Completed to move them to Recently Deleted.</li>
+          <li><strong>Permanently, right away:</strong> in Recently Deleted, choose “Delete Permanently” for a task, or “Delete All.”</li>
+          <li><strong>Everything:</strong> in the App, go to <span class="ui">Settings › Delete All Data</span>. You’ll be asked to confirm twice; the second time, hold “Hold to Delete” for 1.5 seconds or type “Delete.” All tasks, categories, tags, Recently Deleted items, and settings are deleted, only the “Work” and “Personal” categories remain, and scheduled notifications are canceled. <strong>This can’t be undone.</strong> Your Prism Pro purchase is not removed.</li>
+        </ul>
+        <p>Deleting the App from your iPhone also deletes its data. The developer doesn’t hold any of your data, so there’s nothing to delete on the developer’s side.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="new-iphone">
+      <summary>Can I move my data to a new iPhone?</summary>
+      <div class="faq-body">
+        <p>Prism has no feature to sync or transfer data through iCloud or other services. Your data is stored only on your iPhone.</p>
+        <ul>
+          <li>If you set up your new iPhone by <strong>restoring from an iCloud or computer backup</strong> or by using <strong>Quick Start</strong>, your Prism data may come along. Depending on the method and situation, it may not, and the developer can’t guarantee the transfer.</li>
+          <li>After moving, you may be asked to allow notifications again.</li>
+          <li>Prism Pro works on your new iPhone with the same Apple Account (see <a href="#restore">How do I restore my purchase?</a>).</li>
+        </ul>
+        <p>Before you give away your old iPhone, make sure your data appears on the new one.</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ Other questions ============ -->
+  <section class="faq-group" aria-labelledby="others">
+    <h2 id="others">Other questions</h2>
+
+    <details class="faq" id="sound">
+      <summary>I don’t hear the completion sound</summary>
+      <div class="faq-body">
+        <p>Sounds don’t play while your iPhone is in Silent mode. Also make sure <span class="ui">Settings › Haptics &amp; Sound › Completion Sound</span> is on in the App. Completing a task from a widget or notification doesn’t play a sound.</p>
+      </div>
+    </details>
+
+    <details class="faq" id="store-error">
+      <summary>I see “Couldn’t open your data”</summary>
+      <div class="faq-body">
+        <p>Tap “Try Again,” or restart your iPhone and open the App again. If that doesn’t help, please contact us below <strong>without deleting the App</strong> (deleting the App also deletes your data).</p>
+      </div>
+    </details>
+  </section>
+
+  <!-- ============ Contact us ============ -->
+  <section aria-labelledby="contact">
+    <h2 id="contact">Contact us</h2>
+    <p>If you didn’t find an answer above, please send us a message using the contact form. It may take some time to reply.</p>
+    <div class="contact-box">
+      <p><strong>NISHIMURA FUTURE WORKS</strong></p>
+      <p><a class="button" href="../../contact/">Open the contact form</a></p>
+      <p class="small">Including the following helps us look into it faster.</p>
+      <ul class="small">
+        <li>Your iPhone model and iOS version (<span class="ui">Settings › General › About</span>)</li>
+        <li>The Prism version (<span class="ui">Settings › About › Version</span> in the App)</li>
+        <li>What you did and what happened</li>
+      </ul>
+      <p class="small">Please don’t include personal information that isn’t needed for your question, such as the contents of your tasks. See the <a href="../../privacy/en/#inquiry">Privacy Policy</a> for how we handle what you send.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <nav aria-label="Site links">
+    <a href="../../">Home</a>
+    <a href="../../privacy/en/">Privacy Policy</a>
+    <a href="./" aria-current="page">Support</a>
+    <a href="../../contact/">Contact</a>
+  </nav>
+  <p>&copy; 2026 NISHIMURA FUTURE WORKS</p>
+</footer>
+</body>
+</html>
